@@ -1,0 +1,29 @@
+{
+  "name": "lowcode-admin",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "app:form": "pnpm run --filter @lowcode-admin/form-design dev",
+    "app:report": "pnpm run --filter @lowcode-admin/report-design dev",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "低代码，组件库，Vue3，TypeScript"
+  ],
+  "author": "Jeffery",
+  "license": "ISC",
+  "dependencies": {
+    "@lowcode-admin/form-design": "workspace:*",
+    "@lowcode-admin/report-design": "workspace:*",
+    "element-plus": "^2.2.0",
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.3.3",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.34.7"
+  }
+}
